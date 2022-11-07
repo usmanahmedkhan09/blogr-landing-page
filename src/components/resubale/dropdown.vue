@@ -1,18 +1,39 @@
 <template>
-  <div class="dropdown">
-    <div class="wrapper">
+  <div class="dropdown" ref="dropdown">
+    <div class="d-header">
       <span>{{ title }}</span>
-      <img src="../../assets/images/icon-arrow-light.svg" alt="arrow" />
+      <img
+        @click="isActive = !isActive"
+        src="../../assets/images/icon-arrow-light.svg"
+        alt="arrow"
+        :class="isActive ? 'rotate' : ''"
+      />
+    </div>
+    <div class="content" :class="isActive ? 'active' : ''">
+      <div class="data" v-for="(item, index) in data" :key="index">
+        {{ item }}
+      </div>
     </div>
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, ref } from "vue";
+import { onClickOutside } from "@vueuse/core";
 
 export default defineComponent({
-  props: ["title"],
+  props: ["title", "data"],
   setup() {
-    return {};
+    const dropdown = ref(null);
+
+    const isActive = ref(false);
+
+    const close = () => {
+      isActive.value = false;
+    };
+
+    onClickOutside(dropdown, close);
+
+    return { isActive, dropdown };
   },
 });
 </script>

@@ -6,13 +6,13 @@
           <img src="../assets/images/logo.svg" alt="logo" />
         </li>
         <li>
-          <Dropdown :title="'Product'" />
+          <Dropdown :title="'Product'" :data="data" />
         </li>
         <li>
-          <Dropdown :title="'Company'" />
+          <Dropdown :title="'Company'" :data="data" />
         </li>
         <li>
-          <Dropdown :title="'Connect'" />
+          <Dropdown :title="'Connect'" :data="data" />
         </li>
       </ul>
       <div class="buttons">
@@ -29,7 +29,11 @@ import Dropdown from "@/components/resubale/dropdown.vue";
 export default defineComponent({
   components: { Dropdown },
   setup() {
-    return {};
+    let data = ["Content", "Newsletter", "Linkedin"];
+
+    return {
+      data,
+    };
   },
 });
 </script>
