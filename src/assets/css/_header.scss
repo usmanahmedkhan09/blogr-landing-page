@@ -1,0 +1,33 @@
+.header {
+    min-height: 400px;
+    background-image: url('../images/bg-pattern-intro-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $primary-red;
+    border-radius: 0px 0px 0px 70px;
+
+    .navbar {
+        width: 100%;
+        padding: 24px 10%;
+        display: flex;
+        justify-content: space-between;
+
+        ul li {
+            list-style-type: none;
+        }
+
+        button {
+            border: unset;
+            background-color: unset;
+            min-width: 100px;
+            min-height: 40px;
+            border-radius: 20px;
+            color: $white;
+            font-weight: 600;
+            
+            &.active {
+                background-color: $btn-background;
+            }
+        }
+    }
+}
