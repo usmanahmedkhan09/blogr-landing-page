@@ -8,7 +8,7 @@
 
     .navbar {
         width: 100%;
-        padding: 42px 10%;
+        padding: 32px 10%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -16,6 +16,7 @@
         ul {
             list-style-type: none;
             display: flex;
+            padding: unset;
 
             li {
                 padding: 0px 16px;
