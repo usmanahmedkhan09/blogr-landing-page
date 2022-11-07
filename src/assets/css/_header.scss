@@ -11,9 +11,16 @@
         padding: 24px 10%;
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
-        ul li {
+        ul {
             list-style-type: none;
+            display: flex;
+
+            li {
+                padding: 0px 16px;
+                align-self: center;
+            }
         }
 
         button {

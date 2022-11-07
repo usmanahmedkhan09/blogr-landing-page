@@ -5,6 +5,15 @@
         <li>
           <img src="../assets/images/logo.svg" alt="logo" />
         </li>
+        <li>
+          <Dropdown :title="'Product'" />
+        </li>
+        <li>
+          <Dropdown :title="'Company'" />
+        </li>
+        <li>
+          <Dropdown :title="'Connect'" />
+        </li>
       </ul>
       <div class="buttons">
         <button>Login</button>
@@ -15,14 +24,12 @@
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
-// import Helpers from "@/helpers/helpers";
+import Dropdown from "@/components/resubale/dropdown.vue";
 
 export default defineComponent({
+  components: { Dropdown },
   setup() {
-    // const getImage = (url: string) => Helpers.getImageUrl(url);
-    return {
-      // getImage,
-    };
+    return {};
   },
 });
 </script>
