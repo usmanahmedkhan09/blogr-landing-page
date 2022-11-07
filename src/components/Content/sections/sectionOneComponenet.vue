@@ -23,13 +23,23 @@
           </p>
         </div>
       </div>
+      <div class="editior-icon">
+        <img
+          src="../../../assets/images/illustration-editor-desktop.svg"
+          alt=""
+          srcset=""
+        />
+        <!-- <editiorIcon /> -->
+      </div>
     </div>
   </div>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
+import editiorIcon from "../../Icons/editior-desktop.vue";
 
 export default defineComponent({
+  components: { editiorIcon },
   setup() {
     return {};
   },
