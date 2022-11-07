@@ -7,6 +7,27 @@
             color: $dark-gra-blue;
             text-align: center;
         }
+
+        .description_wrapper{
+            display: flex;
+
+            .des_content{
+                flex : 1 1 50%;
+                max-width: 65%;
+                padding: 0px 10rem;
+                .description {
+                    margin: 64px 0px;
+                    h4 {
+                        margin-bottom: 24px;
+                        color: $dark-gra-blue;
+                    }
+                    p {
+                        font-size: 1.2rem;
+                        color: $dark-desaturated-blue;
+                    }
+                }
+            }
+        }
     }
   
 }
