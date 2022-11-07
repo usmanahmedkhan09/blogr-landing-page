@@ -20,6 +20,14 @@
         <button class="active">Sign Up</button>
       </div>
     </nav>
+    <div class="header--content">
+      <h1>A modren publishing platform</h1>
+      <p>Grow your audience and build your online brand</p>
+      <div class="btn--wrapper">
+        <button>Start for Free</button>
+        <button>Learn more</button>
+      </div>
+    </div>
   </header>
 </template>
 <script lang="ts">
