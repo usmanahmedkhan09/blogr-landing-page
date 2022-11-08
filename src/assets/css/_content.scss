@@ -25,7 +25,7 @@
                     }
                     p {
                         font-size: 1.2rem;
-                        color: $dark-desaturated-blue;
+                        color: $dark-grayish-blue;
                     }
                 }
             }
@@ -41,6 +41,54 @@
                     height: 100%;
                     object-fit: contain;
                 }
+            }
+        }
+    }
+
+    .section--two {
+        min-height: 400px;
+        width: 100%;
+        border-radius: 0px 90px 0px 90px;
+        background : linear-gradient(to right, $dark-gra-blue, $dark-desaturated-blue);
+        margin: 100px 0px;
+        padding: 5rem 12rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .description_wrapper {
+            display: flex;
+            flex-direction: column;
+            max-width: 50%;
+            margin-left: auto;
+
+            h3 {
+                color: $white;
+                font-weight: 400;
+            }
+
+
+            p {
+                font-size: 1rem;
+                color: $white;
+                font-weight: 100;
+                line-height: 2rem;
+                margin-top: 32px;
+            }
+        }
+
+        .icons_wrapper{
+            flex : 1 1 50%;
+            max-width: 50%;
+            position: absolute;
+            left: 8%;
+            top: -70px;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
             }
         }
     }
