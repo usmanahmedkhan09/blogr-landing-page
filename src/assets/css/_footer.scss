@@ -1,0 +1,41 @@
+.footer {
+    min-height: 300px;
+    width: 100%;
+    background-color: $dark-black-blue;
+    border-radius: 0px 100px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 10rem;
+
+    * div {
+        max-width:  calc(100% / 4);
+    }
+
+    .logo_wrapper{
+        height: 30px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .list_wrapper {
+        p {
+            color: $white;
+            font-size: 1.2rem;
+            margin: 9px 0px;
+        }
+        ul{
+            list-style-type: none;
+            font-size: 1rem;
+            color: $grayish-blue;
+            padding: unset;
+
+            li {
+                margin: 10px 0px;
+            }
+        }
+    }
+}
