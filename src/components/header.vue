@@ -19,6 +19,9 @@
         <button>Login</button>
         <button class="active">Sign Up</button>
       </div>
+      <div class="menu_icon">
+        <img src="../assets/images/icon-hamburger.svg" alt="" />
+      </div>
     </nav>
     <div class="header--content">
       <h1>A modren publishing platform</h1>

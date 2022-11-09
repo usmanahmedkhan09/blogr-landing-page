@@ -37,16 +37,20 @@
                 background-color: $btn-background;
             }
         }
+
+        .menu_icon{
+            display: none;
+        }
     }
 
     &--content {
         display: flex;
         flex-direction: column;
         align-items: center;  
-        // margin-top: 2rem !important;
 
         h1 {
             color: $white;
+            font-size: 3.2rem;
         }
 
         p {
@@ -92,6 +96,32 @@
                     min-width: 80px;
                 }
             }
+        }
+     
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .header{
+        .navbar{
+
+
+            .buttons{
+                display: none;
+            }
+
+            ul  li:not(:first-child){
+                display: none
+            }
+
+            .menu_icon {
+                align-self: baseline;
+                display: block;
+            }
+        }
+
+        &--content{
+            display: none;
         }
     }
 }
