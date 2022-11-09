@@ -42,14 +42,16 @@
         <button>Learn more</button>
       </div>
     </div>
+    <Sidebar v-if="isClosed" />
   </header>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from "vue";
 import Dropdown from "@/components/resubale/dropdown.vue";
+import Sidebar from "@/components/sidebar.vue";
 
 export default defineComponent({
-  components: { Dropdown },
+  components: { Dropdown, Sidebar },
   setup() {
     let data = ["Content", "Newsletter", "Linkedin"];
 
