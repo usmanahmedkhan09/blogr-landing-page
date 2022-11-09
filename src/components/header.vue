@@ -20,7 +20,18 @@
         <button class="active">Sign Up</button>
       </div>
       <div class="menu_icon">
-        <img src="../assets/images/icon-hamburger.svg" alt="" />
+        <img
+          @click="isClosed = false"
+          v-if="isClosed"
+          src="../assets/images/icon-hamburger.svg"
+          alt=""
+        />
+        <img
+          @click="isClosed = true"
+          v-else
+          src="../assets/images/icon-close.svg"
+          alt=""
+        />
       </div>
     </nav>
     <div class="header--content">
@@ -34,7 +45,7 @@
   </header>
 </template>
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, ref } from "vue";
 import Dropdown from "@/components/resubale/dropdown.vue";
 
 export default defineComponent({
@@ -42,7 +53,10 @@ export default defineComponent({
   setup() {
     let data = ["Content", "Newsletter", "Linkedin"];
 
+    const isClosed = ref(true);
+
     return {
+      isClosed,
       data,
     };
   },
