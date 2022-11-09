@@ -1,7 +1,7 @@
 <template>
   <Header />
-  <Content />
-  <Footer />
+  <!-- <Content />
+  <Footer /> -->
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
