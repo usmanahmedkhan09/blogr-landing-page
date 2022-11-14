@@ -2,6 +2,26 @@
     color: $white;
     position: relative;
 
+    &.dark{
+        color: $dark-black-blue;
+        margin: 10px 0px;
+        width: 80%;
+
+        .d-header {
+            justify-content: center;
+        }
+        
+        .content {
+            position: static;
+            width: 100%;
+            border-radius: 8px;
+            
+            &.active {
+                align-items: center;
+                background-color: $grayish-blue;
+            }
+        }
+    }
     .d-header {
         display: flex;
         align-items: center;    

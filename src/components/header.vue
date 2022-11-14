@@ -21,13 +21,13 @@
       </div>
       <div class="menu_icon">
         <img
-          @click="isClosed = false"
-          v-if="isClosed"
+          @click="isClosed = true"
+          v-if="!isClosed"
           src="../assets/images/icon-hamburger.svg"
           alt=""
         />
         <img
-          @click="isClosed = true"
+          @click="isClosed = false"
           v-else
           src="../assets/images/icon-close.svg"
           alt=""
@@ -55,7 +55,7 @@ export default defineComponent({
   setup() {
     let data = ["Content", "Newsletter", "Linkedin"];
 
-    const isClosed = ref(true);
+    const isClosed = ref(false);
 
     return {
       isClosed,

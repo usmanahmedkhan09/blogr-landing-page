@@ -2,7 +2,7 @@
     width: 80%;
     height : 70%;
     background-color: $white;
-    border-radius: 10px;
+    border-radius: 8px;
     position: absolute;
     top: 0;
     box-shadow:
@@ -12,7 +12,6 @@
     0 22.3px 17.9px rgba(0, 0, 0, 0.072),
     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
-    position:absolute; 
     top:50%; 
     left:50%; 
     transform:translate(-50%, -50%); 
@@ -21,6 +20,35 @@
 
 @media screen and (max-width : 768px) {
     .sidebar {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 32px;
+
+        hr {
+            width: 80%;
+            margin: 16px 0px;
+            // background-color: $grayish-blue;
+            border: 1px solid #eee;
+        }
+
+        .buttons {
+            button {
+                border: unset;
+                background-color: unset;
+                min-width: 140px;
+                min-height: 40px;
+                border-radius: 20px;
+                color: $dark-black-blue;
+                font-weight: 600;
+                display: block;
+                
+                &.active {
+                    background-image : linear-gradient(to right, $light-red, $dark-red) ;
+                    color : $white;
+                }
+            }
+        }
+
     }
 }
