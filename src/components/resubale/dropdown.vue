@@ -32,8 +32,7 @@ export default defineComponent({
   components: { arrowLightVue, arrowDarkVue },
   props: {
     title: {
-      type: Array,
-      default: String,
+      type: String,
     },
     data: {
       type: Array,
