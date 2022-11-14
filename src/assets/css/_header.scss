@@ -1,14 +1,17 @@
 .header {
-    min-height: 400px;
+    min-height: 500px;
     background-image: url('../images/bg-pattern-intro-desktop.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-color: $primary-red;
     border-radius: 0px 0px 0px 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 
     .navbar {
         width: 100%;
-        padding: 32px 10%;
+        padding: 32px 80px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -21,6 +24,9 @@
             li {
                 padding: 0px 16px;
                 align-self: center;
+                span {
+                    font-size: 1.6rem;
+                }
             }
         }
 
@@ -30,11 +36,13 @@
             min-width: 100px;
             min-height: 40px;
             border-radius: 20px;
-            color: $white;
             font-weight: 600;
+            color: $white;
+            font-size: 1.6rem;
             
             &.active {
-                background-color: $btn-background;
+                background-color: $white;
+                color: $primary-red;
             }
         }
 
@@ -50,12 +58,12 @@
 
         h1 {
             color: $white;
-            font-size: 3.2rem;
+            font-size: 4.2rem;
         }
 
         p {
             color: $grayish-blue;
-            font-size: 1.2rem;
+            font-size: 1.6rem;
             margin: 24px 0px;
         }
 
@@ -67,18 +75,21 @@
             button {
                 border: unset;
                 background-color: none;
-                font-size: 1.2rem;
-                padding: 16px;
+                font-size: 1.6rem;
+                padding: 10px;
                 border-radius: 30px;
+                font-weight: 500;
 
                 &:first-child{
-                    color: $white;
-                    background-color: $btn-background;
+                    background-color: $white;
+                    color: $primary-red;
+                
                 }
 
                 &:last-child{
-                    background-color: $white;
-                    color: $primary-red;
+                    color: $white;
+                    border: 1px solid $btn-background;
+                    background-color: $primary-red;
                 }
             }
         }

@@ -5,8 +5,9 @@
 
     .section--one {
         h3{
-            color: $dark-gra-blue;
+            color: $primary-dark-blue;
             text-align: center;
+            font-size: 3.2rem;
         }
 
         .description_wrapper{
@@ -14,15 +15,16 @@
             .des_content{
                 flex : 1 1 50%;
                 max-width: 65%;
-                padding: 0px 10rem;
+                padding: 0px 100px;
                 .description {
                     margin: 64px 0px;
                     h4 {
                         margin-bottom: 24px;
-                        color: $dark-gra-blue;
+                        color: $primary-dark-blue;
+                        font-size: 1.8rem;
                     }
                     p {
-                        font-size: 1.2rem;
+                        font-size: 1.6rem;
                         color: $dark-grayish-blue;
                     }
                 }
@@ -57,7 +59,7 @@
         border-radius: 0px 90px 0px 90px;
         background : linear-gradient(to right, $dark-gra-blue, $dark-desaturated-blue);
         margin: 100px 0px;
-        padding: 5rem 12rem;
+        padding: 50px 120px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -72,12 +74,13 @@
             h3 {
                 color: $white;
                 font-weight: 400;
+                font-size: 2.4rem;
             }
 
 
             p {
-                font-size: 1rem;
-                color: $white;
+                font-size: 1.6rem;
+                color:  $grayish-blue;
                 font-weight: 100;
                 line-height: 2rem;
                 margin-top: 32px;
@@ -88,7 +91,7 @@
             flex : 1 1 50%;
             max-width: 50%;
             position: absolute;
-            left: 8%;
+            left: 60px;
             top: -70px;
 
             img {
@@ -103,7 +106,7 @@
         position: relative;
         margin-bottom: 10rem !important;
         h3{
-            color: $dark-gra-blue;
+            color: $primary-dark-blue;
             text-align: center;
         }
 
@@ -114,17 +117,18 @@
             .des_content{
                 flex : 1 1 50%;
                 max-width: 50%;
-                padding: 0px 4rem 0px 0px;
+                padding: 0px 40px 0px 0px;
                 margin-left: auto;
                 .description {
                     margin: 64px 0px;
                     h4 {
                         margin-bottom: 24px;
-                        color: $dark-gra-blue;
+                        color: $primary-dark-blue;
+                        font-size: 1.8rem;
                     }
                     p {
-                        font-size: 1.2rem;
-                        color: $dark-grayish-blue;
+                        font-size: 1.6rem;
+                        color: $primary-dark-blue;
                     }
                 }
             }
