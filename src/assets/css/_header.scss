@@ -1,5 +1,5 @@
 .header {
-    min-height: 500px;
+    min-height: 450px;
     background-image: url('../images/bg-pattern-intro-desktop.svg');
     background-position: center;
     background-repeat: no-repeat;
@@ -11,7 +11,7 @@
 
     .navbar {
         width: 100%;
-        padding: 32px 80px;
+        padding: 48px 130px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -26,6 +26,7 @@
                 align-self: center;
                 span {
                     font-size: 1.6rem;
+                    // color: $grayish-blue;
                 }
             }
         }

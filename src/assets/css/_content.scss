@@ -1,5 +1,5 @@
 .content{
-    padding-top: 8rem;
+    padding-top: 80px;
     overflow: hidden;
     position: relative;
 
@@ -15,7 +15,7 @@
             .des_content{
                 flex : 1 1 50%;
                 max-width: 65%;
-                padding: 0px 100px;
+                padding: 0px 150px;
                 .description {
                     margin: 64px 0px;
                     h4 {
@@ -25,7 +25,7 @@
                     }
                     p {
                         font-size: 1.6rem;
-                        color: $dark-grayish-blue;
+                        color: $grayish-blue;
                     }
                 }
             }
@@ -91,7 +91,7 @@
             flex : 1 1 50%;
             max-width: 50%;
             position: absolute;
-            left: 60px;
+            left: 110px;
             top: -70px;
 
             img {
@@ -104,7 +104,7 @@
 
     .section--three{
         position: relative;
-        margin-bottom: 10rem !important;
+        margin-bottom: 100px !important;
         h3{
             color: $primary-dark-blue;
             text-align: center;
@@ -128,7 +128,7 @@
                     }
                     p {
                         font-size: 1.6rem;
-                        color: $primary-dark-blue;
+                        color: $grayish-blue;
                     }
                 }
             }

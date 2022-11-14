@@ -1,11 +1,7 @@
 <template>
   <div class="section--two">
     <div class="icons_wrapper">
-      <img
-        src="../../../assets/images/illustration-phones.svg"
-        alt=""
-        srcset=""
-      />
+      <img src="../../../assets/images/illustration-phones.svg" alt="" />
       <!-- <PhonesIcon /> -->
     </div>
     <div class="description_wrapper">
