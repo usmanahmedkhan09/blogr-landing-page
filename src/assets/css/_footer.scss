@@ -40,3 +40,18 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: center;
+        text-align: center;
+
+        .logo_wrapper {
+            height: unset;
+            max-width: 100px;
+           margin: auto;
+        }
+    }   
+}

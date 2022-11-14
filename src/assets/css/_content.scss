@@ -11,8 +11,6 @@
 
         .description_wrapper{
             display: flex;
-           
-
             .des_content{
                 flex : 1 1 50%;
                 max-width: 65%;
@@ -138,4 +136,71 @@
         }
     }
   
+}
+
+@media screen and (max-width : 768px){
+    .content {
+        padding-top: 3rem;
+
+        .section--one{
+            .description_wrapper{
+                display: flex;
+                flex-wrap: wrap;
+                flex-flow: column-reverse wrap;
+                padding: 0px 16px;
+                .des_content {
+                    padding: unset;
+                    max-width: unset;
+                    flex: unset;
+
+                    .description {
+                        text-align: center;
+                    }
+                }
+                .editior-icon{
+                    position: static;
+                }
+            }
+        }
+
+        .section--two{
+            padding: 1rem;
+            display: flex;
+            flex-flow: column wrap;
+
+            .description_wrapper{
+                max-width: unset;
+                text-align: center;
+            }
+
+            .icons_wrapper{
+                max-width: unset;
+                position: static;
+                flex: unset;
+                margin-top: -6rem
+            }
+        }
+
+        .section--three {
+            margin-bottom: unset !important;
+            .description_wrapper{
+                display: flex;
+                flex-wrap: wrap;
+                flex-flow: column wrap;
+                padding: 0px 16px;
+                .des_content{
+                    padding: unset;
+                    max-width: unset;
+                    flex: unset;
+                    .description {
+                        text-align: center;
+                    }
+                }
+
+                .editior-icon{
+                    position: static;
+                }
+            }
+        }
+    }
 }
