@@ -25,11 +25,15 @@
       </div>
       <div class="editior-icon">
         <img
+          class="desktop"
           src="../../../assets/images/illustration-editor-desktop.svg"
-          alt=""
-          srcset=""
+          alt="desktop"
         />
-        <!-- <editiorIcon /> -->
+        <img
+          class="mobile"
+          src="../../../assets/images/illustration-editor-mobile.svg"
+          alt="desktop"
+        />
       </div>
     </div>
   </div>

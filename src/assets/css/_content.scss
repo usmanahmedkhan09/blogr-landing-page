@@ -30,14 +30,22 @@
 
             .editior-icon {
                 position: absolute;
-                max-width: 682px;
-                right: -103px;
+                max-width: 600px;
+                right: -156px;
                 top: 64px;
 
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: contain;
+                }
+
+                .desktop{
+                    display: block;
+                }
+
+                .mobile{
+                    display: none;
                 }
             }
         }
@@ -143,6 +151,9 @@
         padding-top: 3rem;
 
         .section--one{
+            h3 {
+                margin-bottom: 2rem;
+            }
             .description_wrapper{
                 display: flex;
                 flex-wrap: wrap;
@@ -159,6 +170,16 @@
                 }
                 .editior-icon{
                     position: static;
+                    max-width: unset;
+                    height: 350px;
+                    
+                    .desktop {
+                        display: none;
+                    }
+
+                    .mobile{
+                        display: block;
+                    }
                 }
             }
         }
@@ -203,4 +224,38 @@
             }
         }
     }
+}
+
+@media screen and (min-width: 768px ) and (max-width : 1024px) {
+    .content {
+        .section--one{
+            .description_wrapper{
+                    .des_content{
+                        padding: 2rem;
+                    }
+                    .editior-icon{
+                        position: unset;
+                        margin-right: -150px;
+                        margin-top: -170px;
+                    }
+                }
+            
+        }
+        .section--two{
+            padding: 2rem;
+            .icons_wrapper{
+                position: unset;
+                margin-top: -170px;
+            }
+        }
+
+        .section--three {
+            .description_wrapper{
+                .des_content{
+                    padding: 0px 0px 0px 3rem;
+                }
+            }
+            
+        }
+    }   
 }
